@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.IdentityServer", "IdentityServer\FreeCourse.IdentityServer\FreeCourse.IdentityServer.csproj", "{021BDD77-760B-4915-9D4B-FB4F44E713AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{4268CBF0-12D3-4ABF-B7E5-9D1FAA486026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.PhotoStock", "Services\PhotoStock\FreeCourse.Services.PhotoStock\FreeCourse.Services.PhotoStock.csproj", "{6989F850-8F2B-470D-944D-9EEED999AE5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{021BDD77-760B-4915-9D4B-FB4F44E713AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{021BDD77-760B-4915-9D4B-FB4F44E713AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{021BDD77-760B-4915-9D4B-FB4F44E713AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6989F850-8F2B-470D-944D-9EEED999AE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6989F850-8F2B-470D-944D-9EEED999AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6989F850-8F2B-470D-944D-9EEED999AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6989F850-8F2B-470D-944D-9EEED999AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{9526E1DA-152E-46DA-A12C-0F0C00486C84} = {C57735CE-0364-4197-B953-BEFAC1410F2E}
 		{6BC41594-A06C-4670-A7FD-F4910564D211} = {1B57B304-6D8F-45CA-8C38-75374CC0EA55}
 		{021BDD77-760B-4915-9D4B-FB4F44E713AE} = {334D88B1-0B4B-485C-BE62-09D484A87142}
+		{4268CBF0-12D3-4ABF-B7E5-9D1FAA486026} = {440081FC-F6B5-40D7-B5D3-FC9D38490827}
+		{6989F850-8F2B-470D-944D-9EEED999AE5D} = {4268CBF0-12D3-4ABF-B7E5-9D1FAA486026}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6226FCEB-F463-471A-9990-3A5D4FEA2D42}
