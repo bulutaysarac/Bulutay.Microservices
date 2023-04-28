@@ -1,2 +1,3 @@
 Services
 	Catalog API -> http://localhost:5011
+	IdentityServer -> http://localhost:5001
