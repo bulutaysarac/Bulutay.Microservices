@@ -1,7 +1,8 @@
 Services
 	Catalog API		-> http://localhost:5011
 	PhotoStock API	-> http://localhost:5012
-	BasketAPI		-> http://localhost:5013
-	DiscountAPI		-> http://localhost:5014
-	OrderAPI		-> http://localhost:5015
+	Basket API		-> http://localhost:5013
+	Discount API	-> http://localhost:5014
+	Order API		-> http://localhost:5015
+	FakePayment API	-> http://localhost:5016
 	IdentityServer	-> http://localhost:5001
