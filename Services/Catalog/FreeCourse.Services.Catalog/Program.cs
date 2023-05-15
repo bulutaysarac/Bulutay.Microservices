@@ -1,8 +1,12 @@
+using FreeCourse.Services.Catalog.Dtos;
 using FreeCourse.Services.Catalog.Services;
 using FreeCourse.Services.Catalog.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using System.Xml.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +37,25 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var serviceProvider = scope.ServiceProvider;
+    var categoryService = serviceProvider.GetRequiredService<ICategoryService>();
+    var categoriesResponse = await categoryService.GetAllAsync();
+    if (categoriesResponse.Data == null || categoriesResponse.Data.Any() == false)
+    {
+        await categoryService.CreateAsync(new CategoryCreateDto
+        {
+            Name = "Asp .NET Core Course"
+        });
+
+        await categoryService.CreateAsync(new CategoryCreateDto
+        {
+            Name = "Asp .NET Core API Course"
+        });
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
